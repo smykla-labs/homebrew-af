@@ -22,7 +22,7 @@ jobs:
     - name: "Set up Homebrew"
       id: set-up-homebrew
       # Cannot pin by digest: Homebrew/actions uses branch-based versioning
-      uses: Homebrew/actions/setup-homebrew@9d95677ac22eae39bdeb2ac8a196adb20a3cedbc # master
+      uses: Homebrew/actions/setup-homebrew@8755b6d5065aa03235f519c4eb2399feb0162b95 # master
 
     - name: "Cache Homebrew Bundler RubyGems"
       uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4.3.0
