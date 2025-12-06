@@ -18,10 +18,10 @@ jobs:
 
     steps:
     - name: "Set up Homebrew"
-      uses: Homebrew/actions/setup-homebrew@9d95677ac22eae39bdeb2ac8a196adb20a3cedbc # master
+      uses: Homebrew/actions/setup-homebrew@8755b6d5065aa03235f519c4eb2399feb0162b95 # master
 
     - name: "Set up git"
-      uses: Homebrew/actions/git-user-config@9d95677ac22eae39bdeb2ac8a196adb20a3cedbc # master
+      uses: Homebrew/actions/git-user-config@8755b6d5065aa03235f519c4eb2399feb0162b95 # master
 
     - name: "Pull bottles"
       env:
@@ -37,7 +37,7 @@ jobs:
           "$PULL_REQUEST"
 
     - name: "Push commits"
-      uses: Homebrew/actions/git-try-push@9d95677ac22eae39bdeb2ac8a196adb20a3cedbc # master
+      uses: Homebrew/actions/git-try-push@8755b6d5065aa03235f519c4eb2399feb0162b95 # master
       with:
         token: ${{ github.token }}
         branch: master
