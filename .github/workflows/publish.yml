@@ -26,10 +26,10 @@ jobs:
         private-key: ${{ secrets.SMYKLOT_APP_PRIVATE_KEY }}
 
     - name: "Set up Homebrew"
-      uses: Homebrew/actions/setup-homebrew@696ef0de3166f256259af861e4b6dcbb7b99d84b # master
+      uses: Homebrew/actions/setup-homebrew@75ea84e0c056f44fbc237368be867593cd459107 # master
 
     - name: "Set up git"
-      uses: Homebrew/actions/git-user-config@696ef0de3166f256259af861e4b6dcbb7b99d84b # master
+      uses: Homebrew/actions/git-user-config@75ea84e0c056f44fbc237368be867593cd459107 # master
 
     - name: "Pull bottles"
       env:
@@ -45,7 +45,7 @@ jobs:
           "$PULL_REQUEST"
 
     - name: "Push commits"
-      uses: Homebrew/actions/git-try-push@696ef0de3166f256259af861e4b6dcbb7b99d84b # master
+      uses: Homebrew/actions/git-try-push@75ea84e0c056f44fbc237368be867593cd459107 # master
       with:
         token: ${{ steps.github-app-token.outputs.token }}
         branch: main
