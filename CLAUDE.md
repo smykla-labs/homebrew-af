@@ -9,10 +9,10 @@ This is a Homebrew tap for the `af` CLI tool (Afrael's CLI). It contains a singl
 ## Formula Structure
 
 - **Formula location**: `Formula/af.rb`
-- **Upstream project**: https://github.com/smykla-labs/af
+- **Upstream project**: https://github.com/smykla-skalski/af
 - **License**: MIT
 - **Build dependencies**: `rust`, `openssl`, `zlib`
-- **Bottle hosting**: GitHub Container Registry (`ghcr.io/v2/smykla-labs/af`)
+- **Bottle hosting**: GitHub Container Registry (`ghcr.io/v2/smykla-skalski/af`)
 
 The formula:
 1. Downloads source tarball from GitHub releases
@@ -49,7 +49,7 @@ The repository uses Homebrew's `brew test-bot` for automated testing:
   1. `brew test-bot --only-cleanup-before` - Clean environment
   2. `brew test-bot --only-setup` - Setup test environment
   3. `brew test-bot --only-tap-syntax` - Validate Ruby syntax
-  4. `brew test-bot --only-formulae --root-url='https://ghcr.io/v2/smykla-labs/af'` - Build bottles
+  4. `brew test-bot --only-formulae --root-url='https://ghcr.io/v2/smykla-skalski/af'` - Build bottles
 - **Artifacts**: Bottles uploaded as `bottles_${{ matrix.os }}`
 
 ### Publishing Workflow
@@ -66,7 +66,7 @@ When updating to a new version of `af`:
 1. Update `url` with new version tag
 2. Download the new tarball and compute SHA256:
    ```bash
-   curl -L https://github.com/smykla-labs/af/archive/refs/tags/vX.Y.Z.tar.gz | shasum -a 256
+   curl -L https://github.com/smykla-skalski/af/archive/refs/tags/vX.Y.Z.tar.gz | shasum -a 256
    ```
 3. Update `sha256` field
 4. Remove the `bottle do...end` block (bottles will be rebuilt by CI)

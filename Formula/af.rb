@@ -1,12 +1,12 @@
 class Af < Formula
   desc "Afrael's CLI tool"
-  homepage "https://github.com/smykla-labs/af"
-  url "https://github.com/smykla-labs/af/archive/refs/tags/v0.8.54.tar.gz"
+  homepage "https://github.com/smykla-skalski/af"
+  url "https://github.com/smykla-skalski/af/archive/refs/tags/v0.8.54.tar.gz"
   sha256 "86f437c26e213252086d7837419708478e2fbe6e35c13ebbd5851a41fe7429e0"
   license "MIT"
 
   bottle do
-    root_url "https://ghcr.io/v2/smykla-labs/af"
+    root_url "https://ghcr.io/v2/smykla-skalski/af"
     sha256 cellar: :any,                 arm64_sequoia: "72d4da828ed17399c2fd4a3bb20f7876952ed703314c2ed486c4020d37dd0b8c"
     sha256 cellar: :any_skip_relocation, x86_64_linux:  "7362e33b51091f59db880eaadeaabf77d58c0dbf22b4b8c1d2d3ddd766386633"
   end

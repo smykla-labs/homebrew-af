@@ -1,15 +1,15 @@
-# smykla-labs af
+# smykla-skalski af
 
 ## How do I install these formulae?
 
-`brew install smykla-labs/af/<formula>`
+`brew install smykla-skalski/af/<formula>`
 
-Or `brew tap smykla-labs/af` and then `brew install <formula>`.
+Or `brew tap smykla-skalski/af` and then `brew install <formula>`.
 
 Or, in a `brew bundle` `Brewfile`:
 
 ```ruby
-tap "smykla-labs/af"
+tap "smykla-skalski/af"
 brew "<formula>"
 ```
 
